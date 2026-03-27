@@ -21,7 +21,6 @@
       line-height: 1.6;
     }
 
-    /* NAV */
     nav {
       position: fixed;
       top: 0;
@@ -35,20 +34,17 @@
       z-index: 1000;
     }
 
-    nav a, nav button {
+    nav a {
       color: #94a3b8;
-      background: none;
-      border: none;
-      cursor: pointer;
+      text-decoration: none;
       font-size: 0.95rem;
       transition: 0.3s;
     }
 
-    nav a:hover, nav button:hover {
+    nav a:hover {
       color: #38bdf8;
     }
 
-    /* HERO */
     header {
       height: 100vh;
       display: flex;
@@ -105,7 +101,6 @@
       text-decoration: none;
     }
 
-    /* SECTIONS */
     .container {
       max-width: 1050px;
       margin: auto;
@@ -127,7 +122,6 @@
       font-size: 1.1rem;
     }
 
-    /* SKILLS */
     .skills {
       display: flex;
       flex-wrap: wrap;
@@ -142,7 +136,6 @@
       font-size: 0.95rem;
     }
 
-    /* PROJECTS */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -168,18 +161,12 @@
       margin-bottom: 8px;
     }
 
-    /* CONTACT */
-    .contact {
-      text-align: center;
-    }
-
     footer {
       text-align: center;
       padding: 40px;
       color: #64748b;
     }
 
-    /* RESPONSIVE */
     @media (max-width: 768px) {
       h1 { font-size: 2.6rem; }
     }
@@ -195,14 +182,8 @@
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 
-  <a href="CV.pdf" download style="
-    background:#38bdf8;
-    color:#0b1220;
-    padding:8px 14px;
-    border-radius:10px;
-    font-weight:600;
-    margin-left:10px;
-  ">
+  <a href="Sebastian%20Monje%20Pulecio%20%282%29-comprimido.pdf" download
+     style="background:#38bdf8;color:#0b1220;padding:8px 14px;border-radius:10px;font-weight:600;">
     Download CV
   </a>
 </nav>
@@ -219,8 +200,17 @@
   </p>
 
   <div class="cta">
-    <a class="btn" href="cv.pdf" download>Download CV</a>
-    <a class="btn-outline" href="https://github.com/SebastianMonjePulecio" target="_blank">GitHub</a>
+    <a class="btn"
+       href="Sebastian%20Monje%20Pulecio%20%282%29-comprimido.pdf"
+       download="CV-Sebastian-Monje.pdf">
+      Download CV
+    </a>
+
+    <a class="btn-outline"
+       href="https://github.com/SebastianMonjePulecio"
+       target="_blank">
+      GitHub
+    </a>
   </div>
 </header>
 
@@ -251,79 +241,37 @@
   </section>
 
   <!-- PROJECTS -->
-<section id="projects">
-  <h2>Case Studies</h2>
+  <section id="projects">
+    <h2>Case Studies</h2>
 
-  <div class="grid">
+    <div class="grid">
 
-    <!-- CASE 1 -->
-    <div class="card">
-      <h3>📦 Retail Sales ETL Pipeline</h3>
+      <div class="card">
+        <h3>📦 Retail Sales ETL Pipeline</h3>
+        <p><strong>Problem:</strong> Sales data was scattered across multiple sources.</p>
+        <p><strong>Solution:</strong> Built automated ETL pipeline using Python & SQL.</p>
+        <p><strong>Impact:</strong> Reduced manual processing time and improved reporting.</p>
+      </div>
 
-      <p style="color:#94a3b8; margin-bottom:10px;">
-        <strong>Problem:</strong> Sales data was scattered across multiple sources and required manual cleaning before reporting.
-      </p>
+      <div class="card">
+        <h3>📊 BI Dashboard</h3>
+        <p><strong>Problem:</strong> No visibility of KPIs.</p>
+        <p><strong>Solution:</strong> Power BI dashboard for analytics.</p>
+        <p><strong>Impact:</strong> Faster decision making.</p>
+      </div>
 
-      <p style="color:#94a3b8; margin-bottom:10px;">
-        <strong>Solution:</strong> Built an automated ETL pipeline using Python and SQL to extract, clean, transform and centralize data into a structured dataset.
-      </p>
+      <div class="card">
+        <h3>🤖 Automation System</h3>
+        <p><strong>Problem:</strong> Repetitive manual tasks.</p>
+        <p><strong>Solution:</strong> Python automation scripts.</p>
+        <p><strong>Impact:</strong> Increased efficiency.</p>
+      </div>
 
-      <p style="color:#94a3b8;">
-        <strong>Impact:</strong> Reduced manual data processing time and enabled consistent reporting for business analysis.
-      </p>
-
-      <p style="color:#38bdf8; margin-top:10px;">
-        Python · SQL · Pandas · ETL · Data Engineering Basics
-      </p>
     </div>
-
-    <!-- CASE 2 -->
-    <div class="card">
-      <h3>📊 Business Intelligence Dashboard</h3>
-
-      <p style="color:#94a3b8; margin-bottom:10px;">
-        <strong>Problem:</strong> Decision-makers lacked real-time visibility into key business KPIs.
-      </p>
-
-      <p style="color:#94a3b8; margin-bottom:10px;">
-        <strong>Solution:</strong> Designed an interactive Power BI dashboard to track revenue, sales trends, and customer performance.
-      </p>
-
-      <p style="color:#94a3b8;">
-        <strong>Impact:</strong> Improved decision-making speed by centralizing KPIs into a single visual interface.
-      </p>
-
-      <p style="color:#38bdf8; margin-top:10px;">
-        Power BI · Excel · Data Visualization · KPI Tracking
-      </p>
-    </div>
-
-    <!-- CASE 3 -->
-    <div class="card">
-      <h3>🤖 Workflow Automation System</h3>
-
-      <p style="color:#94a3b8; margin-bottom:10px;">
-        <strong>Problem:</strong> Repetitive manual tasks were slowing down operational workflows.
-      </p>
-
-      <p style="color:#94a3b8; margin-bottom:10px;">
-        <strong>Solution:</strong> Developed Python automation scripts to handle data extraction, file processing, and report generation.
-      </p>
-
-      <p style="color:#94a3b8;">
-        <strong>Impact:</strong> Increased operational efficiency by reducing manual workload and execution time.
-      </p>
-
-      <p style="color:#38bdf8; margin-top:10px;">
-        Python · Automation · APIs · Scripting
-      </p>
-    </div>
-
-  </div>
-</section>
+  </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="contact">
+  <section id="contact">
     <h2>Contact</h2>
     <p>📩 monjesebas7@gmail.com</p>
     <p>🔗 github.com/SebastianMonjePulecio</p>
